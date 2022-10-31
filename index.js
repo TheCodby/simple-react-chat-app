@@ -6,7 +6,7 @@ const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: process.env.APP_URL,
+    origin: "https://react-chat-app-client-neon.vercel.app",
   },
 });
 // {name: name, message: message}
